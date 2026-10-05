@@ -1,0 +1,11 @@
+body{font-variant-numeric:tabular-nums}
+.live{animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.flash-up{animation:fu 1.2s}.flash-down{animation:fd 1.2s}
+@keyframes fu{from{color:#2EC4A0;background:#2EC4A026}}
+@keyframes fd{from{color:#F0616D;background:#F0616D26}}
+th[data-sort]{cursor:pointer;user-select:none}
+th[data-sort]:hover{color:#F5B94A}
+#ranges button{padding:.35rem .75rem;border-radius:.5rem;color:#8FA3BF;border:1px solid #243652}
+#ranges button.on{background:#F5B94A;color:#0F1B2D;border-color:#F5B94A;font-weight:700}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
